@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Biedwin SecureHub</title>
+</head>
+<body>
+    <header class="navbar">
+<a href="#" class="logo">
+    <img src="./assets/logo.png" alt="Biedwin SecureHub">
+</a>
+<nav class="nav-link">
+    <a href="#home">Home</a>
+    <a href="#find-security">Find-Security</a>
+    <a href="#about">About</a>
+    <a href="#safety">Safety</a>
+    <a href="#contact">Contact</a>
+</nav>
+<div class="nav-actions">
+  <button class="btn btn-outline">Get-Started</button>
+  <button class="btn btn-primary">Login</button>
+</div>
+<button class="menu-btn">☰</button>
+    </header>
+    <main>
+        <section class="hero" id="home">
+    <h1>Your Safety, Our Priority</h1>
+    <p>Find, compare and book licensed private security services anywhere in Nigeria.</p>
+    <a href="#get-started" class="btn">Get Started</a>
+    <a href="#find-security" class="btn green">Find Security</a>
+  </section>
+
+  <section id="get-started">
+    <h2>Join Biedwin SecureHub</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Register as a User</h3>
+        <p>Find security services and book a provider.</p>
+        <a href="#user-register" class="btn">User Registration</a>
+      </div>
+
+      <div class="card">
+        <h3>Register a Security Company</h3>
+        <p>Submit your company details and licence for verification.</p>
+        <a href="#company-register" class="btn green">Company Registration</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="user-register">
+    <h2>User Registration</h2>
+    <form>
+      <input type="text" placeholder="Full name" required>
+      <input type="email" placeholder="Email address" required>
+      <input type="tel" placeholder="Phone number" required>
+      <input type="password" placeholder="Create password" required>
+      <button type="submit">Create User Account</button>
+    </form>
+  </section>
+
+  <section id="company-register">
+    <h2>Licensed Security Company Registration</h2>
+    <form>
+      <input type="text" placeholder="Registered company name" required>
+      <input type="email" placeholder="Company email" required>
+      <input type="tel" placeholder="Company phone number" required>
+
+      <select required>
+        <option value="">Select state of operation</option>
+        <option>Abia</option>
+        <option>Adamawa</option>
+        <option>Akwa Ibom</option>
+        <option>Anambra</option>
+        <option>Bauchi</option>
+        <option>Bayelsa</option>
+        <option>Benue</option>
+        <option>Borno</option>
+        <option>Cross River</option>
+        <option>Delta</option>
+        <option>Ebonyi</option>
+        <option>Edo</option>
+        <option>Ekiti</option>
+        <option>Enugu</option>
+        <option>Gombe</option>
+        <option>Imo</option>
+        <option>Jigawa</option>
+        <option>Kaduna</option>
+        <option>Kano</option>
+        <option>Katsina</option>
+        <option>Kebbi</option>
+        <option>Kogi</option>
+        <option>Kwara</option>
+        <option>Lagos</option>
+        <option>Nasarawa</option>
+        <option>Niger</option>
+        <option>Ogun</option>
+        <option>Ondo</option>
+        <option>Osun</option>
+        <option>Oyo</option>
+        <option>Plateau</option>
+        <option>Rivers</option>
+        <option>Sokoto</option>
+        <option>Taraba</option>
+        <option>Yobe</option>
+        <option>Zamfara</option>
+        <option>Federal Capital Territory (FCT)</option>
+      </select>
+
+      <input type="text" placeholder="Company office address" required>
+      <input type="text" placeholder="Security services offered" required>
+      <input type="text" placeholder="company picture" required>
+
+      <label for="licence">Upload licence documents</label>
+      <input type="file" id="licence" accept=".pdf,.jpg,.jpeg,.png" multiple required>
+
+      <button type="submit">Submit for Verification</button>
+    </form>
+  </section>
+<section id="login">
+    <h2>Login</h2>
+    <form>
+      <input type="email" placeholder="Email address" required>
+      <input type="password" placeholder="Password" required>
+
+      <select required>
+        <option value="">Select account type</option>
+        <option>User</option>
+        <option>Security Company Administrator</option>
+        <option>Platform Administrator</option>
+      </select>
+
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <section id="find-security">
+    <h2>Find a Security Company</h2>
+
+    <form>
+      <input type="text" placeholder="Search company or service">
+
+      <select>
+        <option value="">Select state</option>
+        <option>Rivers</option>
+        <option>Lagos</option>
+        <option>Federal Capital Territory</option>
+        <option>Other Nigerian states</option>
+      </select>
+
+      <select>
+        <option value="">Choose a service</option>
+        <option>Manned Guarding</option>
+        <option>Event Security</option>
+        <option>Estate Security</option>
+        <option>Executive Protection</option>
+        <option>Security Consultancy</option>
+        <option>Other Security Services</option>
+      </select>
+
+      <input type="number" placeholder="Maximum distance in kilometres" min="1">
+<button type="submit">Search Companies</button>
+    </form>
+
+    <div id="company-results" class="cards">
+    </div>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Security Service</h2>
+
+    <form>
+      <input type="text" placeholder="Selected company ID" required>
+      <input type="text" placeholder="Service required" required>
+      <input type="text" placeholder="Service location" required>
+      <input type="date" required>
+      <textarea placeholder="Describe your security needs"></textarea>
+      <button type="submit">Send Booking Request</button>
+    </form>
+  </section>
+
+  <section id="dashboards">
+    <h2>Account Dashboards</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>User Dashboard</h3>
+        <p>View bookings and company responses.</p>
+      </div>
+
+      <div class="card">
+        <h3>Company Dashboard</h3>
+        <p>Receive booking requests and respond to users.</p>
+      </div>
+
+      <div class="card">
+        <h3>Admin Dashboard</h3>
+        <p>Verify companies, manage accounts and review complaints.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Find Trusted Security Providers, Protect What Matters.
+
+Your safety deserves a smarter approach. <br>
+
+Biedwin SecureHub connects individuals, families, businesses, residential estates, and event organizers with private security companies across Nigeria. Discover security services, compare providers, review verification status, and submit service requests all in one convenient place.</p>
+  </section>
+
+  <section id="safety">
+    <h2>Safety and Trust</h2>
+    <p>Check provider credentials and confirm service arrangements before making payments.</p>
+  </section>
+ <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Your email" required>
+      <input type="tel" placeholder="Your phone number" required>
+      <textarea placeholder="Your message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+    </main>
+      <footer>
+    <p>&copy; 2026 Biedwin SecureHub. All rights reserved.</p>
+    <p>Your Safety • Our Priority</p>
+  </footer>
+  <script>script.js</script>   
+</body>
+</html>
